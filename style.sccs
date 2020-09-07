@@ -1,0 +1,33 @@
+// Variables
+$color: #ff4855;
+
+
+
+.div_circle_ripple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle_ripple {
+  background-color:#fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: ripple 0.7s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba($color, 0.6),
+                0 0 0 1em rgba($color, 0.3),
+                0 0 0 3em rgba($color, 0.3),
+                0 0 0 5em rgba($color, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba($color, 0.3),
+                0 0 0 3em rgba($color, 0.3),
+                0 0 0 5em rgba($color, 0.3),
+                0 0 0 8em rgba($color, 0);
+  }
+}
